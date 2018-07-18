@@ -7,7 +7,6 @@ import (
 
 func main() {
 	var ch chan int
-	ch = make(chan int)
 	for i := 0; i < 3; i++ {
 		go func(idx int) {
 			ch <- (idx + 1) * 2
